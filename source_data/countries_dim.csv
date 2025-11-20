@@ -1,0 +1,251 @@
+country_name,iso2_code,region,subregion,population,source_system
+Afghanistan,AF,Asia,Southern Asia,40218234,RESTCountriesAPI
+Åland Islands,AX,Europe,Northern Europe,28875,RESTCountriesAPI
+Albania,AL,Europe,Southern Europe,2837743,RESTCountriesAPI
+Algeria,DZ,Africa,Northern Africa,44700000,RESTCountriesAPI
+American Samoa,AS,Oceania,Polynesia,55197,RESTCountriesAPI
+Andorra,AD,Europe,Southern Europe,77265,RESTCountriesAPI
+Angola,AO,Africa,Middle Africa,32866268,RESTCountriesAPI
+Anguilla,AI,Americas,Caribbean,13452,RESTCountriesAPI
+Antarctica,AQ,Polar,Antarctica,1000,RESTCountriesAPI
+Antigua and Barbuda,AG,Americas,Caribbean,97928,RESTCountriesAPI
+Argentina,AR,Americas,South America,45376763,RESTCountriesAPI
+Armenia,AM,Asia,Western Asia,2963234,RESTCountriesAPI
+Aruba,AW,Americas,Caribbean,106766,RESTCountriesAPI
+Australia,AU,Oceania,Australia and New Zealand,25687041,RESTCountriesAPI
+Austria,AT,Europe,Central Europe,8917205,RESTCountriesAPI
+Azerbaijan,AZ,Asia,Western Asia,10110116,RESTCountriesAPI
+Bahamas,BS,Americas,Caribbean,393248,RESTCountriesAPI
+Bahrain,BH,Asia,Western Asia,1701583,RESTCountriesAPI
+Bangladesh,BD,Asia,Southern Asia,164689383,RESTCountriesAPI
+Barbados,BB,Americas,Caribbean,287371,RESTCountriesAPI
+Belarus,BY,Europe,Eastern Europe,9398861,RESTCountriesAPI
+Belgium,BE,Europe,Western Europe,11555997,RESTCountriesAPI
+Belize,BZ,Americas,Central America,397621,RESTCountriesAPI
+Benin,BJ,Africa,Western Africa,12123198,RESTCountriesAPI
+Bermuda,BM,Americas,Northern America,63903,RESTCountriesAPI
+Bhutan,BT,Asia,Southern Asia,771612,RESTCountriesAPI
+Bolivia (Plurinational State of),BO,Americas,South America,11673029,RESTCountriesAPI
+"Bonaire, Sint Eustatius and Saba",BQ,Americas,Caribbean,17408,RESTCountriesAPI
+Bosnia and Herzegovina,BA,Europe,Southern Europe,3280815,RESTCountriesAPI
+Botswana,BW,Africa,Southern Africa,2351625,RESTCountriesAPI
+Bouvet Island,BV,Antarctic Ocean,South Antarctic Ocean,0,RESTCountriesAPI
+Brazil,BR,Americas,South America,212559409,RESTCountriesAPI
+British Indian Ocean Territory,IO,Africa,Eastern Africa,3000,RESTCountriesAPI
+United States Minor Outlying Islands,UM,Americas,Northern America,300,RESTCountriesAPI
+Virgin Islands (British),VG,Americas,Caribbean,30237,RESTCountriesAPI
+Virgin Islands (U.S.),VI,Americas,Caribbean,106290,RESTCountriesAPI
+Brunei Darussalam,BN,Asia,South-Eastern Asia,437483,RESTCountriesAPI
+Bulgaria,BG,Europe,Eastern Europe,6927288,RESTCountriesAPI
+Burkina Faso,BF,Africa,Western Africa,20903278,RESTCountriesAPI
+Burundi,BI,Africa,Eastern Africa,11890781,RESTCountriesAPI
+Cambodia,KH,Asia,South-Eastern Asia,16718971,RESTCountriesAPI
+Cameroon,CM,Africa,Middle Africa,26545864,RESTCountriesAPI
+Canada,CA,Americas,Northern America,38005238,RESTCountriesAPI
+Cabo Verde,CV,Africa,Western Africa,555988,RESTCountriesAPI
+Cayman Islands,KY,Americas,Caribbean,65720,RESTCountriesAPI
+Central African Republic,CF,Africa,Middle Africa,4829764,RESTCountriesAPI
+Chad,TD,Africa,Middle Africa,16425859,RESTCountriesAPI
+Chile,CL,Americas,South America,19116209,RESTCountriesAPI
+China,CN,Asia,Eastern Asia,1402112000,RESTCountriesAPI
+Christmas Island,CX,Oceania,Australia and New Zealand,2072,RESTCountriesAPI
+Cocos (Keeling) Islands,CC,Oceania,Australia and New Zealand,550,RESTCountriesAPI
+Colombia,CO,Americas,South America,50882884,RESTCountriesAPI
+Comoros,KM,Africa,Eastern Africa,869595,RESTCountriesAPI
+Congo,CG,Africa,Middle Africa,5518092,RESTCountriesAPI
+Congo (Democratic Republic of the),CD,Africa,Middle Africa,89561404,RESTCountriesAPI
+Cook Islands,CK,Oceania,Polynesia,18100,RESTCountriesAPI
+Costa Rica,CR,Americas,Central America,5094114,RESTCountriesAPI
+Croatia,HR,Europe,Southern Europe,4047200,RESTCountriesAPI
+Cuba,CU,Americas,Caribbean,11326616,RESTCountriesAPI
+Curaçao,CW,Americas,Caribbean,155014,RESTCountriesAPI
+Cyprus,CY,Europe,Southern Europe,1207361,RESTCountriesAPI
+Czech Republic,CZ,Europe,Central Europe,10698896,RESTCountriesAPI
+Denmark,DK,Europe,Northern Europe,5831404,RESTCountriesAPI
+Djibouti,DJ,Africa,Eastern Africa,988002,RESTCountriesAPI
+Dominica,DM,Americas,Caribbean,71991,RESTCountriesAPI
+Dominican Republic,DO,Americas,Caribbean,10847904,RESTCountriesAPI
+Ecuador,EC,Americas,South America,17643060,RESTCountriesAPI
+Egypt,EG,Africa,Northern Africa,102334403,RESTCountriesAPI
+El Salvador,SV,Americas,Central America,6486201,RESTCountriesAPI
+Equatorial Guinea,GQ,Africa,Middle Africa,1402985,RESTCountriesAPI
+Eritrea,ER,Africa,Eastern Africa,5352000,RESTCountriesAPI
+Estonia,EE,Europe,Northern Europe,1331057,RESTCountriesAPI
+Ethiopia,ET,Africa,Eastern Africa,114963583,RESTCountriesAPI
+Falkland Islands (Malvinas),FK,Americas,South America,2563,RESTCountriesAPI
+Faroe Islands,FO,Europe,Northern Europe,48865,RESTCountriesAPI
+Fiji,FJ,Oceania,Melanesia,896444,RESTCountriesAPI
+Finland,FI,Europe,Northern Europe,5530719,RESTCountriesAPI
+France,FR,Europe,Western Europe,67391582,RESTCountriesAPI
+French Guiana,GF,Americas,South America,254541,RESTCountriesAPI
+French Polynesia,PF,Oceania,Polynesia,280904,RESTCountriesAPI
+French Southern Territories,TF,Africa,Southern Africa,140,RESTCountriesAPI
+Gabon,GA,Africa,Middle Africa,2225728,RESTCountriesAPI
+Gambia,GM,Africa,Western Africa,2416664,RESTCountriesAPI
+Georgia,GE,Asia,Western Asia,3714000,RESTCountriesAPI
+Germany,DE,Europe,Central Europe,83240525,RESTCountriesAPI
+Ghana,GH,Africa,Western Africa,31072945,RESTCountriesAPI
+Gibraltar,GI,Europe,Southern Europe,33691,RESTCountriesAPI
+Greece,GR,Europe,Southern Europe,10715549,RESTCountriesAPI
+Greenland,GL,Americas,Northern America,56367,RESTCountriesAPI
+Grenada,GD,Americas,Caribbean,112519,RESTCountriesAPI
+Guadeloupe,GP,Americas,Caribbean,400132,RESTCountriesAPI
+Guam,GU,Oceania,Micronesia,168783,RESTCountriesAPI
+Guatemala,GT,Americas,Central America,16858333,RESTCountriesAPI
+Guernsey,GG,Europe,Northern Europe,62999,RESTCountriesAPI
+Guinea,GN,Africa,Western Africa,13132792,RESTCountriesAPI
+Guinea-Bissau,GW,Africa,Western Africa,1967998,RESTCountriesAPI
+Guyana,GY,Americas,South America,786559,RESTCountriesAPI
+Haiti,HT,Americas,Caribbean,11402533,RESTCountriesAPI
+Heard Island and McDonald Islands,HM,Antarctic,Antarctic,0,RESTCountriesAPI
+Vatican City,VA,Europe,Southern Europe,451,RESTCountriesAPI
+Honduras,HN,Americas,Central America,9904608,RESTCountriesAPI
+Hungary,HU,Europe,Central Europe,9749763,RESTCountriesAPI
+Hong Kong,HK,Asia,Eastern Asia,7481800,RESTCountriesAPI
+Iceland,IS,Europe,Northern Europe,366425,RESTCountriesAPI
+India,IN,Asia,Southern Asia,1380004385,RESTCountriesAPI
+Indonesia,ID,Asia,South-Eastern Asia,273523621,RESTCountriesAPI
+Ivory Coast,CI,Africa,Western Africa,26378275,RESTCountriesAPI
+Iran (Islamic Republic of),IR,Asia,Southern Asia,83992953,RESTCountriesAPI
+Iraq,IQ,Asia,Western Asia,40222503,RESTCountriesAPI
+Ireland,IE,Europe,Northern Europe,4994724,RESTCountriesAPI
+Isle of Man,IM,Europe,Northern Europe,85032,RESTCountriesAPI
+Israel,IL,Asia,Western Asia,9216900,RESTCountriesAPI
+Italy,IT,Europe,Southern Europe,59554023,RESTCountriesAPI
+Jamaica,JM,Americas,Caribbean,2961161,RESTCountriesAPI
+Japan,JP,Asia,Eastern Asia,125836021,RESTCountriesAPI
+Jersey,JE,Europe,Northern Europe,100800,RESTCountriesAPI
+Jordan,JO,Asia,Western Asia,10203140,RESTCountriesAPI
+Kazakhstan,KZ,Asia,Central Asia,18754440,RESTCountriesAPI
+Kenya,KE,Africa,Eastern Africa,53771300,RESTCountriesAPI
+Kiribati,KI,Oceania,Micronesia,119446,RESTCountriesAPI
+Kuwait,KW,Asia,Western Asia,4270563,RESTCountriesAPI
+Kyrgyzstan,KG,Asia,Central Asia,6591600,RESTCountriesAPI
+Lao People's Democratic Republic,LA,Asia,South-Eastern Asia,7275556,RESTCountriesAPI
+Latvia,LV,Europe,Northern Europe,1901548,RESTCountriesAPI
+Lebanon,LB,Asia,Western Asia,6825442,RESTCountriesAPI
+Lesotho,LS,Africa,Southern Africa,2142252,RESTCountriesAPI
+Liberia,LR,Africa,Western Africa,5057677,RESTCountriesAPI
+Libya,LY,Africa,Northern Africa,6871287,RESTCountriesAPI
+Liechtenstein,LI,Europe,Central Europe,38137,RESTCountriesAPI
+Lithuania,LT,Europe,Northern Europe,2794700,RESTCountriesAPI
+Luxembourg,LU,Europe,Western Europe,632275,RESTCountriesAPI
+Macao,MO,Asia,Eastern Asia,649342,RESTCountriesAPI
+North Macedonia,MK,Europe,Southern Europe,2083380,RESTCountriesAPI
+Madagascar,MG,Africa,Eastern Africa,27691019,RESTCountriesAPI
+Malawi,MW,Africa,Eastern Africa,19129955,RESTCountriesAPI
+Malaysia,MY,Asia,South-Eastern Asia,32365998,RESTCountriesAPI
+Maldives,MV,Asia,Southern Asia,540542,RESTCountriesAPI
+Mali,ML,Africa,Western Africa,20250834,RESTCountriesAPI
+Malta,MT,Europe,Southern Europe,525285,RESTCountriesAPI
+Marshall Islands,MH,Oceania,Micronesia,59194,RESTCountriesAPI
+Martinique,MQ,Americas,Caribbean,378243,RESTCountriesAPI
+Mauritania,MR,Africa,Western Africa,4649660,RESTCountriesAPI
+Mauritius,MU,Africa,Eastern Africa,1265740,RESTCountriesAPI
+Mayotte,YT,Africa,Eastern Africa,226915,RESTCountriesAPI
+Mexico,MX,Americas,North America,128932753,RESTCountriesAPI
+Micronesia (Federated States of),FM,Oceania,Micronesia,115021,RESTCountriesAPI
+Moldova (Republic of),MD,Europe,Eastern Europe,2617820,RESTCountriesAPI
+Monaco,MC,Europe,Western Europe,39244,RESTCountriesAPI
+Mongolia,MN,Asia,Eastern Asia,3278292,RESTCountriesAPI
+Montenegro,ME,Europe,Southern Europe,621718,RESTCountriesAPI
+Montserrat,MS,Americas,Caribbean,4922,RESTCountriesAPI
+Morocco,MA,Africa,Northern Africa,36910558,RESTCountriesAPI
+Mozambique,MZ,Africa,Eastern Africa,31255435,RESTCountriesAPI
+Myanmar,MM,Asia,South-Eastern Asia,54409794,RESTCountriesAPI
+Namibia,NA,Africa,Southern Africa,2540916,RESTCountriesAPI
+Nauru,NR,Oceania,Micronesia,10834,RESTCountriesAPI
+Nepal,NP,Asia,Southern Asia,29136808,RESTCountriesAPI
+Netherlands,NL,Europe,Western Europe,17441139,RESTCountriesAPI
+New Caledonia,NC,Oceania,Melanesia,271960,RESTCountriesAPI
+New Zealand,NZ,Oceania,Australia and New Zealand,5084300,RESTCountriesAPI
+Nicaragua,NI,Americas,Central America,6624554,RESTCountriesAPI
+Niger,NE,Africa,Western Africa,24206636,RESTCountriesAPI
+Nigeria,NG,Africa,Western Africa,206139587,RESTCountriesAPI
+Niue,NU,Oceania,Polynesia,1470,RESTCountriesAPI
+Norfolk Island,NF,Oceania,Australia and New Zealand,2302,RESTCountriesAPI
+Korea (Democratic People's Republic of),KP,Asia,Eastern Asia,25778815,RESTCountriesAPI
+Northern Mariana Islands,MP,Oceania,Micronesia,57557,RESTCountriesAPI
+Norway,NO,Europe,Northern Europe,5379475,RESTCountriesAPI
+Oman,OM,Asia,Western Asia,5106622,RESTCountriesAPI
+Pakistan,PK,Asia,Southern Asia,220892331,RESTCountriesAPI
+Palau,PW,Oceania,Micronesia,18092,RESTCountriesAPI
+"Palestine, State of",PS,Asia,Western Asia,4803269,RESTCountriesAPI
+Panama,PA,Americas,Central America,4314768,RESTCountriesAPI
+Papua New Guinea,PG,Oceania,Melanesia,8947027,RESTCountriesAPI
+Paraguay,PY,Americas,South America,7132530,RESTCountriesAPI
+Peru,PE,Americas,South America,32971846,RESTCountriesAPI
+Philippines,PH,Asia,South-Eastern Asia,109581085,RESTCountriesAPI
+Pitcairn,PN,Oceania,Polynesia,56,RESTCountriesAPI
+Poland,PL,Europe,Central Europe,37950802,RESTCountriesAPI
+Portugal,PT,Europe,Southern Europe,10305564,RESTCountriesAPI
+Puerto Rico,PR,Americas,Caribbean,3194034,RESTCountriesAPI
+Qatar,QA,Asia,Western Asia,2881060,RESTCountriesAPI
+Republic of Kosovo,XK,Europe,Eastern Europe,1775378,RESTCountriesAPI
+Réunion,RE,Africa,Eastern Africa,840974,RESTCountriesAPI
+Romania,RO,Europe,Eastern Europe,19286123,RESTCountriesAPI
+Russian Federation,RU,Europe,Eastern Europe,144104080,RESTCountriesAPI
+Rwanda,RW,Africa,Eastern Africa,12952209,RESTCountriesAPI
+Saint Barthélemy,BL,Americas,Caribbean,9417,RESTCountriesAPI
+"Saint Helena, Ascension and Tristan da Cunha",SH,Africa,Western Africa,4255,RESTCountriesAPI
+Saint Kitts and Nevis,KN,Americas,Caribbean,53192,RESTCountriesAPI
+Saint Lucia,LC,Americas,Caribbean,183629,RESTCountriesAPI
+Saint Martin (French part),MF,Americas,Caribbean,38659,RESTCountriesAPI
+Saint Pierre and Miquelon,PM,Americas,Northern America,6069,RESTCountriesAPI
+Saint Vincent and the Grenadines,VC,Americas,Caribbean,110947,RESTCountriesAPI
+Samoa,WS,Oceania,Polynesia,198410,RESTCountriesAPI
+San Marino,SM,Europe,Southern Europe,33938,RESTCountriesAPI
+Sao Tome and Principe,ST,Africa,Middle Africa,219161,RESTCountriesAPI
+Saudi Arabia,SA,Asia,Western Asia,34813867,RESTCountriesAPI
+Senegal,SN,Africa,Western Africa,16743930,RESTCountriesAPI
+Serbia,RS,Europe,Southern Europe,6908224,RESTCountriesAPI
+Seychelles,SC,Africa,Eastern Africa,98462,RESTCountriesAPI
+Sierra Leone,SL,Africa,Western Africa,7976985,RESTCountriesAPI
+Singapore,SG,Asia,South-Eastern Asia,5685807,RESTCountriesAPI
+Sint Maarten (Dutch part),SX,Americas,Caribbean,40812,RESTCountriesAPI
+Slovakia,SK,Europe,Central Europe,5458827,RESTCountriesAPI
+Slovenia,SI,Europe,Southern Europe,2100126,RESTCountriesAPI
+Solomon Islands,SB,Oceania,Melanesia,686878,RESTCountriesAPI
+Somalia,SO,Africa,Eastern Africa,15893219,RESTCountriesAPI
+South Africa,ZA,Africa,Southern Africa,59308690,RESTCountriesAPI
+South Georgia and the South Sandwich Islands,GS,Americas,South America,30,RESTCountriesAPI
+Korea (Republic of),KR,Asia,Eastern Asia,51780579,RESTCountriesAPI
+Spain,ES,Europe,Southern Europe,47351567,RESTCountriesAPI
+Sri Lanka,LK,Asia,Southern Asia,21919000,RESTCountriesAPI
+Sudan,SD,Africa,Northern Africa,43849269,RESTCountriesAPI
+South Sudan,SS,Africa,Middle Africa,11193729,RESTCountriesAPI
+Suriname,SR,Americas,South America,586634,RESTCountriesAPI
+Svalbard and Jan Mayen,SJ,Europe,Northern Europe,2562,RESTCountriesAPI
+Swaziland,SZ,Africa,Southern Africa,1160164,RESTCountriesAPI
+Sweden,SE,Europe,Northern Europe,10353442,RESTCountriesAPI
+Switzerland,CH,Europe,Central Europe,8636896,RESTCountriesAPI
+Syrian Arab Republic,SY,Asia,Western Asia,17500657,RESTCountriesAPI
+Taiwan,TW,Asia,Eastern Asia,23503349,RESTCountriesAPI
+Tajikistan,TJ,Asia,Central Asia,9537642,RESTCountriesAPI
+"Tanzania, United Republic of",TZ,Africa,Eastern Africa,59734213,RESTCountriesAPI
+Thailand,TH,Asia,South-Eastern Asia,69799978,RESTCountriesAPI
+Timor-Leste,TL,Asia,South-Eastern Asia,1318442,RESTCountriesAPI
+Togo,TG,Africa,Western Africa,8278737,RESTCountriesAPI
+Tokelau,TK,Oceania,Polynesia,1411,RESTCountriesAPI
+Tonga,TO,Oceania,Polynesia,105697,RESTCountriesAPI
+Trinidad and Tobago,TT,Americas,Caribbean,1399491,RESTCountriesAPI
+Tunisia,TN,Africa,Northern Africa,11818618,RESTCountriesAPI
+Turkey,TR,Asia,Western Asia,84339067,RESTCountriesAPI
+Turkmenistan,TM,Asia,Central Asia,6031187,RESTCountriesAPI
+Turks and Caicos Islands,TC,Americas,Caribbean,38718,RESTCountriesAPI
+Tuvalu,TV,Oceania,Polynesia,11792,RESTCountriesAPI
+Uganda,UG,Africa,Eastern Africa,45741000,RESTCountriesAPI
+Ukraine,UA,Europe,Eastern Europe,44134693,RESTCountriesAPI
+United Arab Emirates,AE,Asia,Western Asia,9890400,RESTCountriesAPI
+United Kingdom of Great Britain and Northern Ireland,GB,Europe,Northern Europe,67215293,RESTCountriesAPI
+United States of America,US,Americas,Northern America,329484123,RESTCountriesAPI
+Uruguay,UY,Americas,South America,3473727,RESTCountriesAPI
+Uzbekistan,UZ,Asia,Central Asia,34232050,RESTCountriesAPI
+Vanuatu,VU,Oceania,Melanesia,307150,RESTCountriesAPI
+Venezuela (Bolivarian Republic of),VE,Americas,South America,28435943,RESTCountriesAPI
+Vietnam,VN,Asia,South-Eastern Asia,97338583,RESTCountriesAPI
+Wallis and Futuna,WF,Oceania,Polynesia,11750,RESTCountriesAPI
+Western Sahara,EH,Africa,Northern Africa,510713,RESTCountriesAPI
+Yemen,YE,Asia,Western Asia,29825968,RESTCountriesAPI
+Zambia,ZM,Africa,Eastern Africa,18383956,RESTCountriesAPI
+Zimbabwe,ZW,Africa,Southern Africa,14862927,RESTCountriesAPI
