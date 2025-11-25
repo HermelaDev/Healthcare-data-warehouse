@@ -2,7 +2,6 @@
 *A Complete End-to-End Data Engineering Project*
 
 ![Project Banner](image.png)  
-> *(Replace with your generated banner image)*
 
 ---
 
