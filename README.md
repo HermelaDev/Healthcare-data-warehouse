@@ -7,62 +7,62 @@
 
 ## 📌 Overview  
 
-This repository contains a **fully functional Healthcare Data Warehouse** built as part of the **Data Warehousing & Mining** course.  
-It integrates **three heterogeneous data sources** into a unified **PostgreSQL analytical warehouse**, supported by a complete **Python ETL pipeline** and a **star-schema data model**.
+This repository contains a **Healthcare Data Warehouse** built as part of the **Data Warehousing & Mining** course.  
+It integrates three heterogeneous data sources into a unified **PostgreSQL warehouse**:
 
-The project demonstrates professional-level skills in:
+1. **CSV clinical encounter data**  
+2. **MySQL patient contact data**  
+3. **World Bank API healthcare indicators**  
+
+The project demonstrates practical skills in:
 
 - ETL workflow design  
-- Star-schema dimensional modeling  
-- Data quality handling  
-- Data integration from CSV, MySQL, API sources  
-- PostgreSQL warehousing  
-- Partitioning & indexing for query optimization  
-- Analytical SQL reporting  
+- Dimensional modeling (snowflake-style star schema)  
+- Data cleaning & transformation  
+- Loading analytical structures into PostgreSQL  
+- Indexing & range partitioning for optimization  
+- Writing SQL-based healthcare analytics  
 
 ---
 
 ## 🎯 Project Goals  
 
 ### 1. Extract  
-From **three heterogeneous data sources**:
+From multiple independent sources:
 
-1. **CSV** – Diabetes hospital encounters dataset  
-2. **MySQL** – Operational patient contact data  
-3. **REST API** – Country & region metadata (RESTCountries API)
+- **CSV** - Diabetes hospital encounter dataset  
+- **MySQL** – Patient contact information  
+- **World Bank API** – Country-level health indicators  
 
 ### 2. Transform  
-Includes:
+Including:
 
-- Null-handling  
-- Data type corrections  
-- Normalization of categories  
-- Surrogate key generation  
-- Derivation of `readmitted_30d_flag`  
-- Table normalization (1NF → 2NF → 3NF)  
-- Diagnosis code standardization  
+- Handling null values  
+- Cleaning text fields  
+- Standardizing diagnosis codes  
+- Creating surrogate keys  
+- Deriving analytical attributes (e.g., `readmitted_30d_flag`)  
+- Normalizing tables into a snowflake schema  
 
 ### 3. Load (PostgreSQL)  
-Using a designed **Star Schema** with:  
+Into a warehouse designed with:
 
-- Fact table: `fact_hospital_admission` (partitioned)  
-- Dimension tables: patient, admission, diagnosis, contact, country  
+- Fact table: **`fact_hospital_admission_parted`** (range-partitioned)  
+- Dimensions: patient, admission, diagnosis, patient_contact, country  
 
 ### 4. Optimize  
 
-- **Range partitioning**  
-- **Foreign key constraints**  
-- **Bitmap-style indexes**  
-- **Join indexes**  
-- **Not-null constraints**  
+- PostgreSQL **range partitioning**  
+- **Indexes** on keys and frequently queried attributes  
+- Ensuring **referential integrity** across dimensions  
 
 ### 5. Analyze  
-SQL-based analytical reports such as:
+Running SQL-based analytical queries such as:
 
-- 30-day readmission rate  
-- Top diagnoses  
-- Average length of stay  
-- Regional patient distributions  
+- 30-day readmission trends  
+- Diagnosis frequencies  
+- Length-of-stay distributions  
+- Cross-country healthcare comparisons  
 
 ---
 
@@ -70,156 +70,139 @@ SQL-based analytical reports such as:
 
 | Layer | Technology |
 |------|------------|
-| ETL | Python (Pandas, SQLAlchemy, Requests) |
-| Data Warehouse | PostgreSQL |
-| Operational DB | MySQL |
-| API Source | RESTCountries |
-| Modeling | Star Schema |
-| Partitioning | PostgreSQL Range Partitioning |
-| Documentation | Word Report + PowerPoint Slides |
-
----
-
-## 🏗️ System Architecture  
-
-```
-                 ┌──────────────┐
-   CSV ----------►              │
-                 │              │
- MySQL ----------►   ETL Layer  │──► PostgreSQL DW ──► Analytics
-                 │   (Python)   │
- API ------------►              │
-                 └──────────────┘
-```
-
----
-
-## ⭐ Star Schema Diagram  
-*(Add your diagram PNG here)*
-
-```
-![Star Schema](diagrams/star_schema.png)
-```
+| **ETL** | Python (Pandas, SQLAlchemy, Requests) |
+| **Data Warehouse** | PostgreSQL |
+| **Operational DB** | MySQL |
+| **API Source** | World Bank API |
+| **Modeling** | Snowflake Star Schema |
+| **Partitioning** | PostgreSQL Range Partitioning |
+| **Documentation** | Word Report + PowerPoint Slides |
 
 ---
 
 # 🔄 ETL Pipelines (Summarized)
 
-## **1️⃣ CSV Pipeline**
-- Load diabetes hospital data  
-- Clean missing values  
-- Normalize text fields  
-- Create surrogate keys  
-- Generate fact table measures  
+## **1️⃣ CSV Pipeline - Clinical Encounters**
+- Load diabetic hospital encounter data  
+- Replace `"?"` with `NULL`  
+- Convert numeric fields  
+- Create `readmitted_30d_flag`  
+- Build & load:
+  - `dim_patient`
+  - `dim_admission`
+  - `dim_diagnosis`
+- Map surrogate keys to construct the fact table
 
-```python
-df = pd.read_csv("diabetes.csv")
+## **2️⃣ MySQL Pipeline - Patient Contact Data**
+
+Reads operational patient contact records and loads them into the snowflake structure: 
+
+```bash
+df = pd.read_csv("diabetic_data.csv")
 df.replace("?", None, inplace=True)
-df["readmitted_30d_flag"] = df["readmitted"].apply(lambda x: 1 if x == "<30" else 0)
+df["readmitted_30d_flag"] = df["readmitted"].apply(lambda x: x == "<30")
 ```
+## **3️⃣ API Pipeline - Country Health Indicators**
 
----
-
-## **2️⃣ MySQL Pipeline**
-Reads operational patient contact data:
-
-```python
-mysql_df = pd.read_sql("SELECT * FROM patient_contact", mysql_engine)
+Fetches global health metrics from World Bank API:
+```bash
+url = "https://api.worldbank.org/v2/country/all/indicator/SH.STA.DIAB.ZS?format=json&per_page=20000"
+df = requests.get(url).json()
 ```
-
----
-
-## **3️⃣ API Pipeline**
-
-```python
-url = "https://restcountries.com/v3.1/all?fields=name,cca2,region,subregion,population"
-df = pd.json_normalize(requests.get(url).json())
-```
-
----
-
 ## 🗄️ Data Warehouse Design
 
-### ⭐ Fact Table: `fact_hospital_admission`
-Stores clinical encounter metrics.
+### ⭐ Fact Table: `fact_hospital_admission_parted`
 
-### ⭐ Dimensions:
-- `dim_patient`
-- `dim_admission`
-- `dim_diagnosis`
-- `dim_patient_contact`
-- `dim_country`
+Stores measures such as:
+
+- length of stay  
+- number of procedures & medications  
+- outpatient/emergency visits  
+- readmission indicators  
+- diagnosis keys  
+- patient & admission keys  
+
+### ⭐ Dimensions
+
+- `dim_patient` - demographic attributes  
+- `dim_admission` - admission characteristics  
+- `dim_diagnosis` - ICD-based diagnostic categories  
+- `dim_patient_contact` - contact + country linkage  
+- `dim_country` - World Bank country metrics  
 
 ---
 
-## ⚙️ Physical Optimization  
+## ⚙️ Physical Optimization
 
-### 🧩 Partitioning  
-`PARTITION BY RANGE (time_in_hospital)`  
+### 🧩 Partitioning
 
-### ⚡ Indexing  
-`patient_key`, `diagnosis_key`, `readmitted_30d_flag`, etc.
+Fact table partitioned by:
+
+- `time_in_hospital` (RANGE)
+
+This improves query performance for LOS-based analytics.
+
+### ⚡ Indexing
+
+Indexes added on:
+
+- `patient_key`  
+- `admission_dim_key`  
+- `primary_diagnosis_key`  
+- `readmitted_30d_flag`  
 
 ---
 
-# 📊 Example Analytical Queries  
+## 📊 Example Analytical Queries
 
-### 30-Day Readmission Rate  
+### 30-Day Readmission Rate
+
 ```sql
 SELECT
     COUNT(*) AS total_encounters,
-    SUM(CASE WHEN readmitted_30d_flag = 1 THEN 1 END) AS readmissions,
-    ROUND(100.0 * SUM(CASE WHEN readmitted_30d_flag = 1 THEN 1 END) / COUNT(*), 2)
-      AS readmission_rate_pct
+    SUM(CASE WHEN readmitted_30d_flag THEN 1 END) AS readmissions,
+    ROUND(
+        100.0 * SUM(CASE WHEN readmitted_30d_flag THEN 1 END) / COUNT(*),
+        2
+    ) AS readmission_rate_pct
 FROM fact_hospital_admission_parted;
 ```
+## 📊 Example Analytical Queries  
 
----
+### Average LOS by Admission Type  
 
-# 🚀 How to Run This Project  
-
-### 1. Clone  
+```sql
+SELECT
+    a.admission_type,
+    ROUND(AVG(f.time_in_hospital), 2) AS avg_los
+FROM fact_hospital_admission_parted f
+JOIN dim_admission a ON f.admission_dim_key = a.admission_dim_key
+GROUP BY a.admission_type;
+```
+## 🚀 How to Run This Project
+### 1. Clone
 ```bash
 git clone https://github.com/HermelaDev/Healthcare-Data-Warehouse.git
 cd Healthcare-Data-Warehouse
 ```
 
-### 2. Install Dependencies  
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run ETL  
+### 3. Run ETL Scripts
 ```bash
-python etl/etl_csv.py
-python etl/etl_mysql.py
-python etl/etl_api.py
+python etl/etl_csv_diabetes.py
+python etl/etl_mysql_patient_contact.py
+python etl/etl_api_country_health.py
 ```
 
----
+## 👩‍💻 Author
 
-# 🎬 Project Demo GIF  
-*(Replace the GIF below)*
+**Hermela Seltanu Gizaw**
+BSc Data Science & Analytics
+USIU-Africa • Mastercard Foundation Scholar
 
-```
-![Demo](images/demo.gif)
-```
-
----
-
-# 👩‍💻 Author
-
-**Hermela Seltanu Gizaw**  
-Bachelor of Science in Data Science & Analytics  
-USIU–Africa • Mastercard Foundation Scholar  
-
----
-
-# 🌟 Acknowledgements  
-- USIU-Africa School of Science & Technology  
-- Data Warehousing & Mining Course Faculty  
-
----
-
-# 📜 License  
-MIT License — feel free to use or adapt the project structure.
+## 📜 License
+MIT License
